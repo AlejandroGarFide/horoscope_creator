@@ -1,2 +1,4 @@
-# horoscope_creator
-A dummy code for predict your future (just for fun).
+# Horoscope creator
+
+## This little piece of code was created for fun and for practice my python skills.
+## I'm gonna improve this program... in my free time. :)
