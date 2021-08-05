@@ -1,4 +1,8 @@
 from time import sleep
+import random
+
+texto = open("frases.txt").read().splitlines()
+linea = random.choice(texto)
 
 sleep(1)
 print("¿QUIERES SABER TU FUTURO?")
@@ -25,11 +29,21 @@ sig_zod = {
 "Acuario" : "Enero 20 - Febrero 18",
 "Picis": "Febrero 19 - Marzo 20"}
 
-if signo in sig_zod:
-    print("Excelente %s, en un ratico te diré lo que te prepara el futuro." % signo)
+if signo in sig_zod: 
+    print("Excelente %s, nacido en %s. " %(signo, sig_zod[signo]))
 else:
     print("%s no es un signo del zodiaco, no me quieras ver la cara de estúpida." % signo) 
 
 sleep(2)
 
-print("%s: el día de hoy te va a ir de lujo porque weles bien." % signo.upper())
+print("%s: %s\n" %(signo, linea))
+
+sleep(5)
+
+num_suerte = random.randint(0,1995)
+
+print("Ah...")
+sleep(3)
+print(f"Tu número de la suerte es {str(num_suerte)}.\n")
+sleep(1)
+print("Weno adiós.")
