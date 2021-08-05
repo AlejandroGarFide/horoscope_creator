@@ -13,7 +13,7 @@ for i in animacion:
     print(i)
     sleep(0.5)
 
-signo = input("Ingresa tu signo zodiacal: ")
+signo = input("Ingresa tu signo zodiacal: ").capitalize()
 
 sig_zod = { 
 "Aries" : "Marzo 21 - Abril 19", 
